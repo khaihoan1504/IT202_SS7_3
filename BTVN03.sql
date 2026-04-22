@@ -6,4 +6,4 @@ SELECT email
 FROM Student s
 WHERE NOT EXISTS (SELECT 1
 					FROM Payments p
-					WHERE p.name = s.student_name AND p.payment_date > 2024)
+					WHERE p.name = s.student_name AND p.payment_date > '2024-01-01')
